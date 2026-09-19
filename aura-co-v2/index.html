@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TherStyle | Accesorios Stanley</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* ==== CSS mínimo: paleta morada, tipografía y un par de detalles que Bootstrap no trae ==== */
+  :root{
+    --dark:#4a3457;      /* morado oscuro: navbar, footer, paneles */
+    --mid:#7c5a93;       /* morado medio: botones y acentos */
+    --light:#f2eafa;     /* lavanda muy claro: fondos de sección */
+    --pale:#e4d3f0;      /* lavanda pálido: badges/círculos */
+    --pink:#e8a9c4;      /* rosa suave: detalle de acento */
+    --ink:#2e2233;       /* texto oscuro */
+  }
+  body{ font-family:'Poppins', sans-serif; color:var(--ink); }
+  h1,h2,h3,.fw-brand{ font-family:'Poppins', sans-serif; font-weight:700; }
+  .bg-dark-purple{ background-color:var(--dark); }
+  .bg-light-purple{ background-color:var(--light); }
+  .bg-pale-purple{ background-color:var(--pale); }
+  .text-mid-purple{ color:var(--mid); }
+  .btn-purple{ background-color:var(--mid); color:#fff; border:2px solid var(--mid); }
+  .btn-purple:hover{ background-color:var(--dark); border-color:var(--dark); color:#fff; }
+  .btn-outline-purple{ background-color:transparent; color:var(--mid); border:2px solid var(--mid); }
+  .btn-outline-purple:hover{ background-color:var(--mid); color:#fff; }
+  .card-hover{ transition: transform .2s ease, box-shadow .2s ease; }
+  .card-hover:hover{ transform: translateY(-6px); box-shadow: 0 1rem 2rem rgba(0,0,0,.12); }
+
+  .icon-circle{ width:56px; height:56px; flex-shrink:0; }
+  .icon-circle-lg{ width:110px; height:110px; }
+  .thumb-round{ width:64px; height:64px; object-fit:cover; flex-shrink:0; }
+
+  .step-circle{ width:52px; height:52px; }
+  .step-line{ border-top:2px dashed var(--mid); flex-grow:1; margin:0 .75rem; }
+
+  .carousel-panel .carousel-item img{ object-fit:cover; height:320px; }
+  .carousel-panel .carousel-control-prev,
+  .carousel-panel .carousel-control-next{ width:5%; }
+  .carousel-panel .carousel-indicators [data-bs-target]{ background-color:#fff; }
+</style>
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg bg-dark-purple py-3" data-bs-theme="dark">
+  <div class="container">
+    <a class="navbar-brand fw-brand lh-sm text-white" href="#inicio">
+      TherStyle
+      <div class="fs-6 fw-normal">Accesorios Stanley</div>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list fs-2 text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto mt-3 mt-lg-0 gap-lg-3 text-center">
+        <li class="nav-item"><a class="nav-link text-white" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#accesorios">Accesorios</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#packs">Packs</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#packs" class="btn btn-light rounded-pill px-4 mt-3 mt-lg-0">Comprar Ahora</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header id="inicio" class="bg-light-purple">
+  <div class="container py-5">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-6">
+        <h1 class="display-5 mb-3">Dale estilo y protección a tu pachón Stanley</h1>
+        <p class="fs-5 mb-4">Personaliza tu termo con botas de silicona, charms, correas y protectores de pajilla únicos.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#accesorios" class="btn btn-purple rounded-pill px-4 py-2">Ver Catálogo</a>
+          <a href="#packs" class="btn btn-outline-purple rounded-pill px-4 py-2">Personalizar Mi Stanley</a>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="img/hero-tumbler.png" class="img-fluid" style="max-height:460px;" alt="Termo Stanley personalizado con moño y perlas">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== NUESTROS ACCESORIOS ===================== -->
+<section id="accesorios" class="bg-white py-5">
+  <div class="container py-4">
+    <h2 class="text-center mb-1">Nuestros Accesorios</h2>
+    <p class="text-center text-muted mb-5">Protege, combina y luce tu Stanley</p>
+
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+          <iframe src="https://www.youtube.com/embed/VWFmSz1MlNU" title="Cómo personalizar tu termo" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row g-4">
+          <div class="col-sm-6 d-flex gap-3">
+            <img src="img/botas-silicona.png" class="thumb-round rounded-circle" alt="Botas de silicona">
+            <div>
+              <h3 class="h6 mb-1">Botas de Silicona</h3>
+              <p class="text-muted small mb-0">Silicona suave y antideslizante para proteger la base contra golpes y rayones.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 d-flex gap-3">
+            <img src="img/charms-llaveros.png" class="thumb-round rounded-circle" alt="Charms y llaveros">
+            <div>
+              <h3 class="h6 mb-1">Charms y Llaveros</h3>
+              <p class="text-muted small mb-0">Dale un toque personal con dijes, cadenas y llaveros a juego.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 d-flex gap-3">
+            <img src="img/estuches-correas.png" class="thumb-round rounded-circle" alt="Correas ajustables">
+            <div>
+              <h3 class="h6 mb-1">Correas Ajustables</h3>
+              <p class="text-muted small mb-0">Llévalo cómodamente cruzado, con las manos libres.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 d-flex gap-3">
+            <img src="img/protectores-pajilla.png" class="thumb-round rounded-circle" alt="Protectores de pajilla">
+            <div>
+              <h3 class="h6 mb-1">Protectores de Pajilla</h3>
+              <p class="text-muted small mb-0">Cubiertas divertidas para mantener tu pajilla limpia y libre de polvo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CLIENTES FELICES ===================== -->
+<section class="bg-dark-purple text-white py-5">
+  <div class="container py-4">
+    <p class="text-uppercase small mb-1 opacity-75">Nuestros clientes</p>
+    <h2 class="mb-2">Clientes Felices</h2>
+    <p class="mb-4 opacity-75">Únete a cientos de personas que ya confían en nuestros accesorios.</p>
+    <div class="row g-3">
+      <div class="col-6 col-md-4 col-lg-2"><div class="bg-pale-purple text-dark rounded-3 py-4 text-center fw-semibold">Glow Lifestyle</div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="bg-pale-purple text-dark rounded-3 py-4 text-center fw-semibold">Aesthetic Hydrate</div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="bg-pale-purple text-dark rounded-3 py-4 text-center fw-semibold">Pink Vibe</div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="bg-pale-purple text-dark rounded-3 py-4 text-center fw-semibold">Pastel Studio</div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="bg-pale-purple text-dark rounded-3 py-4 text-center fw-semibold">Urban Active</div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="bg-pale-purple text-dark rounded-3 py-4 text-center fw-semibold">Daily Chic</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FEATURES ALTERNADOS ===================== -->
+<section class="bg-white py-5">
+  <div class="container py-4">
+
+    <div class="row align-items-center gy-4 mb-5">
+      <div class="col-md-8 order-2 order-md-1">
+        <h3>Diseños Únicos y Exclusivos</h3>
+        <p class="text-muted mb-0">Creados por diseñadores para que tu Stanley sea incomparable.</p>
+      </div>
+      <div class="col-md-4 order-1 order-md-2 text-center">
+        <div class="icon-circle-lg bg-light-purple rounded-circle d-inline-flex align-items-center justify-content-center">
+          <i class="bi bi-stars fs-1 text-mid-purple"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-center gy-4 mb-5">
+      <div class="col-md-4 text-center">
+        <div class="icon-circle-lg bg-light-purple rounded-circle d-inline-flex align-items-center justify-content-center">
+          <i class="bi bi-truck fs-1 text-mid-purple"></i>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <h3>Envíos Rápidos a Todo el País</h3>
+        <p class="text-muted mb-0">Recibe tus accesorios en la puerta de tu casa en tiempo récord.</p>
+      </div>
+    </div>
+
+    <div class="row align-items-center gy-4">
+      <div class="col-md-8 order-2 order-md-1">
+        <h3>Materiales Duraderos y Lavables</h3>
+        <p class="text-muted mb-0">Hechos con materiales de alta calidad que resisten el uso diario y se limpian fácilmente.</p>
+      </div>
+      <div class="col-md-4 order-1 order-md-2 text-center">
+        <div class="icon-circle-lg bg-light-purple rounded-circle d-inline-flex align-items-center justify-content-center">
+          <i class="bi bi-droplet-half fs-1 text-mid-purple"></i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== CÓMO ARMAR TU ESTILO ===================== -->
+<section class="bg-light-purple py-5">
+  <div class="container py-4">
+    <h2 class="text-center mb-5">¿Cómo armar tu estilo?</h2>
+
+    <div class="d-flex align-items-center justify-content-center mb-4 d-none d-md-flex">
+      <div class="step-circle bg-dark-purple text-white rounded-circle d-flex align-items-center justify-content-center fw-bold">1</div>
+      <div class="step-line"></div>
+      <div class="step-circle bg-dark-purple text-white rounded-circle d-flex align-items-center justify-content-center fw-bold">2</div>
+      <div class="step-line"></div>
+      <div class="step-circle bg-dark-purple text-white rounded-circle d-flex align-items-center justify-content-center fw-bold">3</div>
+    </div>
+
+    <div class="row text-center g-4">
+      <div class="col-md-4">
+        <div class="step-circle bg-dark-purple text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 fw-bold d-md-none">1</div>
+        <p class="text-muted small mb-1">Paso 1</p>
+        <h3 class="h5">Elige tus favoritos</h3>
+        <p class="text-muted">Explora nuestra gama de botas, charms y correas.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="step-circle bg-dark-purple text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 fw-bold d-md-none">2</div>
+        <p class="text-muted small mb-1">Paso 2</p>
+        <h3 class="h5">Combina tus colores</h3>
+        <p class="text-muted">Haz match perfecto con el tono de tu Stanley.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="step-circle bg-dark-purple text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 fw-bold d-md-none">3</div>
+        <p class="text-muted small mb-1">Paso 3</p>
+        <h3 class="h5">¡Disfruta tu Stanley!</h3>
+        <p class="text-muted">Dale el toque final y luce tu estilo.</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="#accesorios" class="text-decoration-none text-mid-purple fw-semibold">
+        <i class="bi bi-play-circle-fill me-1"></i> Ver video de presentación
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LOS MÁS BUSCADOS (CARRUSEL) ===================== -->
+<section id="packs" class="bg-dark-purple text-white py-5">
+  <div class="container py-4">
+    <h2 class="text-center mb-1">Los Más Buscados</h2>
+    <p class="text-center opacity-75 mb-5">Los favoritos de nuestra comunidad</p>
+
+    <div id="masBuscadosCarousel" class="carousel slide carousel-panel bg-black bg-opacity-25 rounded-4 p-3 p-md-5" data-bs-ride="carousel">
+      <div class="carousel-indicators position-relative mb-0 mt-4">
+        <button type="button" data-bs-target="#masBuscadosCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#masBuscadosCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#masBuscadosCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row align-items-center g-4">
+            <div class="col-md-5">
+              <img src="img/pack-glitter-glam.png" class="img-fluid rounded-4 w-100" alt="Pack Glitter & Glam">
+            </div>
+            <div class="col-md-7 text-center text-md-start">
+              <h3>Pack Glitter &amp; Glam</h3>
+              <p class="opacity-75">Brillo y elegancia en cada detalle: charms con pedrería, correa y protector a juego.</p>
+              <a href="#contacto" class="btn btn-light rounded-pill px-4">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row align-items-center g-4">
+            <div class="col-md-5">
+              <img src="img/kit-esencial-activo.png" class="img-fluid rounded-4 w-100" alt="Kit Esencial Activo">
+            </div>
+            <div class="col-md-7 text-center text-md-start">
+              <h3>Kit Esencial Activo</h3>
+              <p class="opacity-75">Todo lo que necesitas para llevar tu Stanley a donde vayas: correa ajustable y charm incluido.</p>
+              <a href="#contacto" class="btn btn-light rounded-pill px-4">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row align-items-center g-4">
+            <div class="col-md-5">
+              <img src="img/charms-personalizados.png" class="img-fluid rounded-4 w-100" alt="Charms Personalizados">
+            </div>
+            <div class="col-md-7 text-center text-md-start">
+              <h3>Charms Personalizados</h3>
+              <p class="opacity-75">Dijes, pompones y flores para darle a tu termo tu propio toque de personalidad.</p>
+              <a href="#contacto" class="btn btn-light rounded-pill px-4">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#masBuscadosCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#masBuscadosCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CHECKLIST + SOBRE NOSOTROS ===================== -->
+<section class="bg-white py-5">
+  <div class="container py-4">
+    <div class="row g-3 mb-5">
+      <div class="col-sm-6 col-lg-3 d-flex align-items-center gap-2">
+        <i class="bi bi-check-circle-fill text-mid-purple fs-5"></i> Silicona de grado alimenticio
+      </div>
+      <div class="col-sm-6 col-lg-3 d-flex align-items-center gap-2">
+        <i class="bi bi-check-circle-fill text-mid-purple fs-5"></i> Compatibilidad 20oz, 30oz y 40oz
+      </div>
+      <div class="col-sm-6 col-lg-3 d-flex align-items-center gap-2">
+        <i class="bi bi-check-circle-fill text-mid-purple fs-5"></i> Garantía de satisfacción de 30 días
+      </div>
+      <div class="col-sm-6 col-lg-3 d-flex align-items-center gap-2">
+        <i class="bi bi-check-circle-fill text-mid-purple fs-5"></i> Atención al cliente 24/7
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <p class="text-muted">En TherStyle nos apasiona la autoexpresión. Nuestra misión es acompañar a quienes aman su Stanley a personalizarlo con accesorios de la más alta calidad y diseño.</p>
+      </div>
+      <div class="col-md-6">
+        <p class="text-muted">Creemos que cada termo es un lienzo en blanco para tu estilo único: por eso seleccionamos cada bota, charm, correa y protector pensando en la comunidad que nos sigue día a día.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer id="contacto" class="bg-dark-purple text-light py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h3 class="h5 text-white">TherStyle</h3>
+        <div class="d-flex gap-3 fs-5 mt-3">
+          <a href="https://www.facebook.com/" class="text-light"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/" class="text-light"><i class="bi bi-instagram"></i></a>
+          <a href="https://x.com/" class="text-light"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.youtube.com/results?search_query=stanley+termos" class="text-light"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3 class="h6 text-white">Información</h3>
+        <ul class="list-unstyled">
+          <li><a href="#inicio" class="text-light text-decoration-none">Inicio</a></li>
+          <li><a href="#accesorios" class="text-light text-decoration-none">Accesorios</a></li>
+          <li><a href="#packs" class="text-light text-decoration-none">Packs</a></li>
+          <li><a href="#contacto" class="text-light text-decoration-none">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3 class="h6 text-white">De contacto</h3>
+        <p class="mb-1"><i class="bi bi-telephone me-2"></i>+502 3583 4094</p>
+        <p class="mb-1"><i class="bi bi-envelope me-2"></i>contacto@therstyle.com</p>
+        <p class="mb-0"><i class="bi bi-geo-alt me-2"></i>Guatemala</p>
+      </div>
+    </div>
+    <hr class="border-light my-4">
+    <p class="text-center small mb-0">© 2026 TherStyle Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
